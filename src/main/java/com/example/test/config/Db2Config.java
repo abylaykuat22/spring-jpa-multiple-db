@@ -47,7 +47,7 @@ public class Db2Config {
 
   @Bean(name = "transactionManager2")
   public PlatformTransactionManager transactionManager(@Qualifier("entityManagerFactory2")
-      EntityManagerFactory entityManagerFactory) {
+  EntityManagerFactory entityManagerFactory) {
     return new JpaTransactionManager(entityManagerFactory);
   }
 

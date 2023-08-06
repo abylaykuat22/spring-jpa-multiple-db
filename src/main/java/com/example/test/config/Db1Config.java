@@ -50,7 +50,7 @@ public class Db1Config {
   @Primary
   @Bean(name = "transactionManager")
   public PlatformTransactionManager transactionManager(@Qualifier("entityManagerFactory1")
-      EntityManagerFactory entityManagerFactory) {
+  EntityManagerFactory entityManagerFactory) {
     return new JpaTransactionManager(entityManagerFactory);
   }
 
